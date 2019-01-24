@@ -1,0 +1,43 @@
+Parameter:
+		FM0 
+		Tari 7.14?
+		PIE 1.5:1
+		Forward Link PR-ASK
+		Pulse Width 0.5
+		Link Frequency 160kHZ
+		Reeverse Modulation FM0
+
+Setting
+	Transmit Power&Receive Sensitivity:
+	https://support.impinj.com/entries/30470187-Setting-Receive-Sensitivity-and-Transmit-Power-on-Revolution-Reader-using-LLRP
+	Transmit power is a little more straightforward, each index = a TransmitPowerValue which is read out as dBm (when divided by 100).
+
+transmitPower = 10 + 0.25*(tx_pwoer-1)
+Note1
+	Reader IP is static as 128.95.28.204
+C# WISP DEMO:
+	modulation FM0 DR 64/3 Tari=12.5us
+	@Changed defaul ReaderSensitivity = 1 means = -80, but not complie into exe
+	         defaule modeIndex into FM0
+@TODO
+Inventory Filter:
+Halt Filter:
+Setting TagPopulation ?
+tagTransmitTime?
+
+c:\U
+
+Search mode:
+population
+
+readersensitivity?
+Read TID?
+
+#2138
+TransmitPower:tx_power
+'ModeIndex': ModelIndex_Name2?
+'tari':
+TagPopulation
+TagtransitTime
+
+The system cannot find the path specified
